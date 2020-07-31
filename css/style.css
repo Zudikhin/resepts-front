@@ -988,20 +988,21 @@ p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 600px;
+    width: 700px;
     height: 550px;
     overflow: auto;
     margin-top: 40px;
     margin-left: 60px;
   }
   .main__list_item {
-    width: 270px;
-    height: 260px;
+    width: 230px;
+    height: 250px;
     -webkit-box-shadow: 0 2px 20px 5px rgba(240, 244, 246, 0.8);
             box-shadow: 0 2px 20px 5px rgba(240, 244, 246, 0.8);
     border-radius: 30px;
     background-color: #ffffff;
     margin-bottom: 30px;
+    margin-left: 30px;
   }
   .main__list_item h5 {
     color: #74787b;
@@ -1062,15 +1063,82 @@ p {
 
 @media (min-width: 1200px) {
   .main__list {
-    width: 600px;
-    margin-left: 60px;
+    width: 700px;
+    margin-left: 30px;
+  }
+  .main__list_item {
+    width: 270px;
+    height: 260px;
   }
 }
 
 @media (min-width: 1440px) {
   .main__list {
-    width: 870px;
+    width: 1000px;
   }
+  .main__list_item {
+    margin-left: 30px;
+  }
+}
+
+.main__list .mCustomScrollBox {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  outline: 0;
+  direction: ltr;
+}
+
+.main__list .mCSB_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: flex-start;
+  margin-right: 100px;
+  width: 100%;
+}
+
+.main__list .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: black !important;
+}
+
+.main__list .mCSB_scrollTools .mCSB_draggerContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  width: 10px;
+  border-radius: 5px;
+  background-color: #e6e6e6;
+}
+
+.main__list .mCSB_draggerRail {
+  background-color: transparent;
+}
+
+.main__list .mCSB_dragger_bar {
+  background: url(../img/vertical-bar.png);
+  height: 64px !important;
+  width: 24px !important;
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+}
+
+.main__list .mCSB_dragger {
+  height: 64px !important;
+}
+
+.main__list .mCSB_scrollTools {
+  height: 350px;
+  right: 20px;
+  top: 80px;
 }
 
 @media (min-width: 992px) {
@@ -1271,6 +1339,7 @@ p {
 
 @media (min-width: 992px) {
   .popular__list {
+    height: 420px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1430,6 +1499,34 @@ p {
 
 .popular__main_slider .slick-dots .slick-active {
   background-color: #fecb47;
+}
+
+.popular__list .mCSB_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.popular__list .mCSB_scrollTools .mCSB_draggerContainer {
+  background-color: #e6e6e6;
+  height: 10px;
+}
+
+.popular__list .mCSB_draggerRail {
+  background-color: transparent;
+}
+
+.popular__list .mCSB_dragger_bar {
+  background: url(../img/horizontal-bar.png);
+  width: 64px !important;
+  height: 24px !important;
+  -webkit-transform: translateY(-13px);
+          transform: translateY(-13px);
+}
+
+.popular__list .mCSB_scrollTools {
+  bottom: 20px;
 }
 
 .search {
@@ -2156,4 +2253,488 @@ p {
   font-family: "Gilroy-Bold";
   font-size: 18px;
   margin-top: 15px;
+}
+
+.recept {
+  margin-top: 10px;
+}
+
+@media (min-width: 992px) {
+  .recept {
+    margin-top: 70px;
+  }
+}
+
+.recept__main .video iframe {
+  width: 100%;
+  height: 300px;
+}
+
+@media (min-width: 768px) {
+  .recept__main .video iframe {
+    height: 500px;
+  }
+}
+
+.recept__main .text {
+  margin-top: 20px;
+}
+
+@media (min-width: 992px) {
+  .recept__main .text {
+    margin-top: 30px;
+  }
+}
+
+.recept__main .text__left h3 {
+  color: #191919;
+  font-family: "Gilroy-Bold";
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.recept__steps {
+  margin-top: 20px;
+}
+
+.recept__steps h4 {
+  color: #191919;
+  font-family: "Gilroy-Bold";
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.recept__steps .difficulty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .recept__steps .difficulty {
+    width: 382px;
+  }
+}
+
+.recept__steps .difficulty__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recept__steps .difficulty__item_circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid rgba(69, 90, 100, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recept__steps .difficulty__item_circle .time {
+  color: #191919;
+  font-family: "Gilroy-Light";
+  font-size: 14px;
+}
+
+.recept__steps .difficulty__item .name {
+  color: #191919;
+  font-family: "Gilroy-Regular";
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.recept__steps .ingredients {
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .recept__steps .ingredients {
+    width: 300px;
+    margin-top: 30px;
+  }
+}
+
+.recept__steps .ingredients li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+  width: 70%;
+}
+
+@media (min-width: 768px) {
+  .recept__steps .ingredients li {
+    width: 100%;
+  }
+}
+
+.recept__steps .ingredients li .ingredients__numeric {
+  color: #191919;
+  font-family: "Gilroy-Light";
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.recept__steps .ingredients li .ingredients__name {
+  color: #191919;
+  font-family: "Gilroy-Light";
+  font-size: 14px;
+  font-weight: 300;
+  text-align: left;
+  width: 180px;
+}
+
+.recept__steps_main {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .recept__steps_main {
+    margin-top: 70px;
+  }
+}
+
+.recept__steps_main:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e6e6e6;
+}
+
+@media (min-width: 768px) {
+  .recept__steps_main:after {
+    top: -35px;
+  }
+}
+
+.recept__steps_main .item {
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .recept__steps_main .item {
+    margin-top: 36px;
+  }
+}
+
+.recept__steps_main .item .step {
+  color: #191919;
+  font-family: "Gilroy-Bold";
+  font-size: 24px;
+}
+
+.recept__steps_main .item .img {
+  margin-top: 14px;
+}
+
+.recept__steps_main .item .img img {
+  width: 100%;
+}
+
+.recept__steps_main .item .ingredients_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 20px;
+}
+
+.recept__steps_main .item .ingredients_text img {
+  width: 25px;
+  height: 25px;
+}
+
+.recept__steps_main .item .ingredients_text p {
+  color: #191919;
+  font-family: "Gilroy-Regular";
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+  .recept__steps_main .item .ingredients_text {
+    margin-top: 30px;
+  }
+  .recept__steps_main .item .ingredients_text p {
+    font-size: 24px;
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+  }
+}
+
+.recept__steps_main .item .cooking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 5px;
+}
+
+.recept__steps_main .item .cooking img {
+  width: 25px;
+  height: 25px;
+}
+
+.recept__steps_main .item .cooking p {
+  color: #191919;
+  font-family: "Gilroy-Regular";
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+  .recept__steps_main .item .cooking {
+    margin-top: 17px;
+  }
+  .recept__steps_main .item .cooking p {
+    font-size: 24px;
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+  }
+}
+
+.recept__steps_main .item .description {
+  color: #191919;
+  font-family: "Gilroy-Regular";
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+@media (min-width: 768px) {
+  .recept__steps_main .item .description {
+    font-size: 24px;
+  }
+}
+
+.recept__aside {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .recept__aside {
+    display: block;
+  }
+  .recept__aside h4 {
+    color: #191919;
+    font-family: "Gilroy-Bold";
+    font-size: 20px;
+    margin-bottom: 26px;
+  }
+}
+
+@media (min-width: 992px) and (min-width: 1440px) {
+  .recept__aside h4 {
+    font-size: 24px;
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  .recept__aside .item {
+    display: block;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 992px) and (min-width: 1440px) {
+  .recept__aside .item {
+    width: 292px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .recept__aside .item img {
+    width: 100%;
+  }
+  .recept__aside .item h5 {
+    color: #191919;
+    font-family: "Gilroy-Regular";
+    font-size: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 992px) and (min-width: 1440px) {
+  .recept__aside .item h5 {
+    font-size: 24px;
+  }
+}
+
+.footer {
+  background-color: #e6e6e6;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding-bottom: 55px;
+    margin-top: 60px;
+  }
+}
+
+.footer__links {
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .footer__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 70px;
+  }
+}
+
+.footer__links_social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__links_social ul li {
+  margin-left: 30px;
+}
+
+.footer__links_social ul li:first-child {
+  margin-left: 0px;
+}
+
+.footer__links_social ul li a {
+  color: black;
+  font-size: 25px;
+}
+
+.footer__links_nav {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer__links_nav {
+    margin-top: 0px;
+  }
+}
+
+.footer__links_nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  .footer__links_nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__links_nav ul li {
+    margin-left: 44px;
+  }
+  .footer__links_nav ul li:first-child {
+    margin-left: 0px;
+  }
+}
+
+.footer__links_nav ul li a {
+  font-family: "Gilroy-Bold";
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .footer__copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 130px;
+  }
+}
+
+.footer__copyright span {
+  opacity: 0.5;
+  color: black;
+  font-family: "Gilroy-Regular";
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  display: block;
+}
+
+.footer__copyright .copyright {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer__copyright .copyright {
+    margin-top: 0px;
+  }
+}
+
+.footer__copyright .studio {
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .footer__copyright .studio {
+    margin-top: 0px;
+  }
 }

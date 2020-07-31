@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <meta name="author" content="Yuriy Zudikhin" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="header__mobile">
+              <a class="header__mobile_logo" href="#">
+                <img src="img/header/logo.png" alt="" />
+              </a>
+              <div class="header__mobile_content">
+                <ul>
+                  <li><a href="#">az</a></li>
+                  <li class="active"><a href="#">ru</a></li>
+                  <li><a href="#">en</a></li>
+                  <li><a href="#">fr</a></li>
+                  <li><a href="#">ir</a></li>
+                </ul>
+                <button class="header__mobile_content_btn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
+            <div class="header__desktop">
+              <a class="header__desktop_logo" href="#">
+                <img src="img/header/logo-desk.png" />
+              </a>
+              <ul class="header__desktop_lang">
+                <li><a href="#">az</a></li>
+                <li class="active"><a href="#">ru</a></li>
+                <li><a href="#">en</a></li>
+                <li><a href="#">fr</a></li>
+                <li><a href="#">ir</a></li>
+              </ul>
+              <div class="header__desktop_form">
+                <form action="">
+                  <input type="text" placeholder="Поиск рецептов" />
+                  <input type="submit" value="Поиск" />
+                </form>
+              </div>
+              <div class="header__desktop_links">
+                <a href="#"
+                  >Личный кабинет <img src="img/header/account.png" alt=""
+                /></a>
+                <a href="#"
+                  >Избранное <img src="img/header/like.png" alt=""
+                /></a>
+                <button class="header__mobile_content_btn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="header__mobile_nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="top">
+              <h5>Jeanette Jennings</h5>
+              <a href="#">Избранное <img src="img/header/like.png" alt="" /></a>
+              <button class="header__mobile_content_btn-desk">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+            <div class="account">
+              <div class="img">
+                <img src="img/header/avatar.png" alt="" />
+              </div>
+              <div class="text">
+                <h5>Jeanette Jennings</h5>
+                <a href="mailto:qwertyuiop@gmail.com">qwertyuiop@gmail.com</a>
+                <p>
+                  Сохраненные рецепты
+                  <img src="img/header/like-acc.png" alt="" /><span>16</span>
+                </p>
+              </div>
+            </div>
+
+            <ul>
+              <li><a href="#">Все категории</a></li>
+              <li><a href="#">Восточная кухня</a></li>
+              <li><a href="#">Итальянская кухня</a></li>
+              <li><a href="#">Еще одна категория</a></li>
+              <li><a href="#">Еще одна категория</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="recept">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-xl-10 offset-xl-1">
+            <div class="recept__main">
+              <div class="video">
+                <iframe
+                  src="https://www.youtube.com/embed/sv3TXMSv6Lw"
+                ></iframe>
+              </div>
+              <div class="text">
+                <div class="text__left">
+                  <h3>Pizza bufalina</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-9 col-xl-7 offset-xl-1">
+            <div class="recept__steps">
+              <h4>Difficulty</h4>
+              <div class="difficulty">
+                <div class="difficulty__item">
+                  <div class="difficulty__item_circle">
+                    <span class="time">20 min</span>
+                  </div>
+                  <span class="name">Preparation</span>
+                </div>
+                <div class="difficulty__item">
+                  <div class="difficulty__item_circle">
+                    <span class="time">14 min</span>
+                  </div>
+                  <span class="name">Baking</span>
+                </div>
+                <div class="difficulty__item">
+                  <div class="difficulty__item_circle">
+                    <span class="time">120 min</span>
+                  </div>
+                  <span class="name">Resting</span>
+                </div>
+              </div>
+              <h4>Ingredients</h4>
+              <ul class="ingredients">
+                <li>
+                  <span class="ingredients__numeric">125 g</span
+                  ><span class="ingredients__name"
+                    >buffalo mozzarella (drained)</span
+                  >
+                </li>
+                <li>
+                  <span class="ingredients__numeric">250 g</span
+                  ><span class="ingredients__name">all-purpose flour</span>
+                </li>
+                <li>
+                  <span class="ingredients__numeric">150 ml</span
+                  ><span class="ingredients__name">water (lukewarm)</span>
+                </li>
+                <li>
+                  <span class="ingredients__numeric">½ tsp</span
+                  ><span class="ingredients__name">sugar</span>
+                </li>
+                <li>
+                  <span class="ingredients__numeric">3½ g</span
+                  ><span class="ingredients__name">active dry yeast</span>
+                </li>
+                <li>
+                  <span class="ingredients__numeric">1 tsp</span
+                  ><span class="ingredients__name">salt (divided)</span>
+                </li>
+                <li>
+                  <span class="ingredients__numeric">2 tbsp</span
+                  ><span class="ingredients__name">olive oil (divided)</span>
+                </li>
+                <li>
+                  <span class="ingredients__numeric">150 ml</span
+                  ><span class="ingredients__name">tomato purée</span>
+                </li>
+                <li>
+                  <span class="ingredients__numeric">10 g</span
+                  ><span class="ingredients__name">basil</span>
+                </li>
+                <li>
+                  <span class="ingredients__numeric">50 g</span
+                  ><span class="ingredients__name"
+                    >cherry tomatoes <br />flour, for work surface <br />basil,
+                    for garnish</span
+                  >
+                </li>
+              </ul>
+              <div class="recept__steps_main">
+                <div class="item">
+                  <span class="step">Step 1/8</span>
+                  <div class="img">
+                    <img src="img/recept/1.png" alt="" />
+                  </div>
+                  <span class="ingredients_text">
+                    <img src="img/recept/ingredients-icon.png" alt="" />
+                    <p>
+                      <b>150 ml</b> water (lukewarm) – ½ tsp sugar – 3½ g active
+                      dry yeast
+                    </p>
+                  </span>
+                  <span class="cooking">
+                    <img src="img/recept/cooking-icon.png" alt="" />
+                    <p>small measuring cup</p>
+                  </span>
+                  <p class="description">
+                    Add sugar and yeast to lukewarm water; stir thoroughly until
+                    dissolved.
+                  </p>
+                </div>
+                <div class="item">
+                  <span class="step">Step 2/8</span>
+                  <div class="img">
+                    <img src="img/recept/2.png" alt="" />
+                  </div>
+                  <span class="ingredients_text">
+                    <img src="img/recept/ingredients-icon.png" alt="" />
+                    <p>
+                      <b>250 g</b> all-purpose flour½ tsp salt1 tbsp olive oil
+                    </p>
+                  </span>
+                  <span class="cooking">
+                    <img src="img/recept/cooking-icon.png" alt="" />
+                    <p>large mixing bowl</p>
+                  </span>
+                  <p class="description">
+                    In a large mixing bowl, mix together flour and salt. Then
+                    add olive oil and water mixture to center of the flour and
+                    mix together until well incorporated.
+                  </p>
+                </div>
+                <div class="item">
+                  <span class="step">Step 3/8</span>
+                  <div class="img">
+                    <img src="img/recept/3.png" alt="" />
+                  </div>
+                  <span class="ingredients_text">
+                    <img src="img/recept/ingredients-icon.png" alt="" />
+                    <p>
+                      flour, for work surface
+                    </p>
+                  </span>
+                  <span class="cooking">
+                    <img src="img/recept/cooking-icon.png" alt="" />
+                    <p>kitchen towel</p>
+                  </span>
+                  <p class="description">
+                    Turn out dough onto a floured work surface and knead until
+                    dough is smooth, but firm. Transfer back to floured bowl,
+                    cover with kitchen towel, and store in a warm, dry place for
+                    approx. 1 – 2 hours until dough has doubled in volume.
+                  </p>
+                </div>
+                <div class="item">
+                  <span class="step">Step 4/8</span>
+                  <div class="img">
+                    <img src="img/recept/4.png" alt="" />
+                  </div>
+                  <span class="cooking">
+                    <img src="img/recept/cooking-icon.png" alt="" />
+                    <p>ovenpizza stone</p>
+                  </span>
+                  <p class="description">
+                    Place pizza stone in unheated oven, then preheat to
+                    250°C/480°F.
+                  </p>
+                </div>
+                <div class="item">
+                  <span class="step">Step 5/8</span>
+                  <div class="img">
+                    <img src="img/recept/5.png" alt="" />
+                  </div>
+                  <span class="ingredients_text">
+                    <img src="img/recept/ingredients-icon.png" alt="" />
+                    <p>
+                      flour, for work surface
+                    </p>
+                  </span>
+                  <span class="cooking">
+                    <img src="img/recept/cooking-icon.png" alt="" />
+                    <p>pizza paddle</p>
+                  </span>
+                  <p class="description">
+                    Remove dough from bowl. On a floured work surface, flatten
+                    out to approx. the size of the pizza stone. Transfer to a
+                    pizza paddle.
+                  </p>
+                </div>
+                <div class="item">
+                  <span class="step">Step 6/8</span>
+                  <div class="img">
+                    <img src="img/recept/6.png" alt="" />
+                  </div>
+                  <span class="ingredients_text">
+                    <img src="img/recept/ingredients-icon.png" alt="" />
+                    <p>
+                      <b>150 ml</b> tomato purée – 1 tbsp olive oil – ½ tsp salt
+                      – <b>10 g</b> basil
+                    </p>
+                  </span>
+                  <span class="cooking">
+                    <img src="img/recept/cooking-icon.png" alt="" />
+                    <p>pizza paddle</p>
+                  </span>
+                  <p class="description">
+                    In a small bowl, mix together tomato purée, olive oil, and
+                    salt. Roughly tear up basil leaves and add them to sauce.
+                    Spread a thin layer over pizza, transfer to pizza stone, and
+                    bake in preheated oven at 250°C/480°F for approx. 6 – 7 min.
+                  </p>
+                </div>
+                <div class="item">
+                  <span class="step">Step 7/8</span>
+                  <div class="img">
+                    <img src="img/recept/7.png" alt="" />
+                  </div>
+                  <span class="ingredients_text">
+                    <img src="img/recept/ingredients-icon.png" alt="" />
+                    <p>
+                      <b>50 g</b> cherry tomatoes – <b>125 g</b> buffalo
+                      mozzarella
+                    </p>
+                  </span>
+                  <span class="cooking">
+                    <img src="img/recept/cooking-icon.png" alt="" />
+                    <p>cutting board – knife</p>
+                  </span>
+                  <p class="description">
+                    Meanwhile, cut cherry tomatoes in half and buffalo
+                    mozzarella into thin slices. Remove pizza from oven; place
+                    tomatoes and mozzarella on top, return to oven and bake for
+                    another 6 – 7 min. until cheese is melted and crust is
+                    golden.
+                  </p>
+                </div>
+                <div class="item">
+                  <span class="step">Step 8/8</span>
+                  <div class="img">
+                    <img src="img/recept/8.png" alt="" />
+                  </div>
+                  <span class="ingredients_text">
+                    <img src="img/recept/ingredients-icon.png" alt="" />
+                    <p>
+                      basil, for garnish
+                    </p>
+                  </span>
+                  <p class="description">
+                    Garnish pizza with fresh basil leaves. Drizzle with high
+                    quality olive oil before serving, if desired. Enjoy!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="recept__aside">
+              <h4>Recomented recept</h4>
+              <a class="item" href="#">
+                <img src="img/recept/rcomend1.png" alt="" />
+                <h5>Orecchiette with rapini</h5>
+              </a>
+              <a class="item" href="#">
+                <img src="img/recept/rcomend2.png" alt="" />
+                <h5>Pizzza with Brie cheese, grapes and thyme</h5>
+              </a>
+              <a class="item" href="#">
+                <img src="img/recept/rcomend3.png" alt="" />
+                <h5>Mini mushroom and avocado burritos</h5>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-xl-11 offset-xl-1">
+            <div class="footer__links">
+              <div class="footer__links_social">
+                <ul>
+                  <li>
+                    <a target="_blank" href="#"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="#"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="#"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__links_nav">
+                <ul>
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">Категории</a></li>
+                  <li><a href="#">Личный кабинет</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__copyright">
+              <span class="copyright"
+                >© 2020 Chinar Cuisine. Все права защищены</span
+              >
+              <span class="studio">Студия hasanov.me</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jquery.mCustomScrollbar.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -40,4 +40,10 @@ $(document).ready(function () {
       return '<a class="popular__dot" href="#"></a>';
     },
   });
+
+  $(".main__list").mCustomScrollbar();
+
+  $(".popular__list").mCustomScrollbar({
+    axis: "x", // horizontal scrollbar
+  });
 });
