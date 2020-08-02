@@ -1902,6 +1902,7 @@ p {
 
 .account {
   margin-top: 10px;
+  margin-bottom: 70px;
 }
 
 @media (min-width: 1200px) {
@@ -2123,7 +2124,7 @@ p {
 }
 
 .cuisine {
-  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .cuisine__main h2 {
@@ -2257,11 +2258,13 @@ p {
 
 .recept {
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .recept {
     margin-top: 70px;
+    margin-bottom: 60px;
   }
 }
 
@@ -2597,14 +2600,12 @@ p {
 
 .footer {
   background-color: #e6e6e6;
-  margin-top: 30px;
   padding-bottom: 30px;
 }
 
 @media (min-width: 768px) {
   .footer {
     padding-bottom: 55px;
-    margin-top: 60px;
   }
 }
 
